@@ -28,8 +28,6 @@ PromptGuard brings **testing discipline** to probabilistic systems.
 npm install -D promptguard
 ````
 
----
-
 ## Basic Usage
 
 ```ts
@@ -55,8 +53,6 @@ Run tests:
 npx promptguard test
 ```
 
----
-
 ## Assertions
 
 ### `toContain(text)`
@@ -67,8 +63,6 @@ result.toContain("hello");
 
 Fails if the LLM output does not include the string.
 
----
-
 ### `toMatch(regex)`
 
 ```ts
@@ -77,8 +71,6 @@ result.toMatch(/Paris/);
 
 Fails if the regex does not match the output.
 
----
-
 ### `not.toContain(text)`
 
 ```ts
@@ -86,8 +78,6 @@ result.not.toContain("error");
 ```
 
 Fails if the output contains the forbidden string.
-
----
 
 ### `toMatchSnapshot()`
 
@@ -105,8 +95,6 @@ Snapshots are stored in:
 __promptguard_snapshots__/
 ```
 
----
-
 ## CLI
 
 ```bash
@@ -115,8 +103,6 @@ promptguard test
 
 PromptGuard delegates execution to Vitest/Jest.
 
----
-
 ## Configuration
 
 Environment variables:
@@ -124,8 +110,6 @@ Environment variables:
 ```bash
 OPENAI_API_KEY=sk-...
 ```
-
----
 
 ## Roadmap
 
@@ -141,8 +125,6 @@ OPENAI_API_KEY=sk-...
 * Retry & flake detection
 * Snapshot diff improvements
 
----
-
 ## Contributing
 
 PromptGuard is early-stage and contributor-friendly.
@@ -154,8 +136,6 @@ Good first issues:
 * snapshot diff UX
 
 Here's the [contributing guide](CONTRIBUTING.md)
-
----
 
 ## License
 
